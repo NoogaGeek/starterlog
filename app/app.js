@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('starterlog', ['ngRoute']);
+angular.module('starterlog', ['firebase', 'ngRoute']);
