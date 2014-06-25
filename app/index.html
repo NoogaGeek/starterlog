@@ -11,7 +11,7 @@
     <!-- APP STYLESHEETS -->
     <link rel='stylesheet' href='styles/app.css'>
   </head>
-  <body>
+  <body ng-app="starterlog">
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -25,41 +25,18 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Docs</a></li>
-            <li><a href="#">Login</a></li>
+            <li><a href="#/about">About</a></li>
+            <li><a href="#/features">Features</a></li>
+            <li><a href="#/pricing">Pricing</a></li>
+            <li><a href="#/login">Login</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div> 
   
-  <div class="container">
-    <div class="row mt centered">
-      <div class="col-lg-6 col-lg-offset-3">
-        <br/>
-        <img class="" height="230" width="250" src="images/starterlog.png">
-        <h1>Welcome to StarterLog!</h1>
-        <h3>Built for the creatives who are blazing new trails.</h3>
-      </div>
-    </div><!-- /row -->
-    <div class="row centered">
-      <div class="col-lg-6 col-lg-offset-3">
-        <form class="form-inline" role="form">
-          <div class="form-group">
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
-          </div>
-          <button type="submit" class="btn btn-warning btn-lg">Get Fired Up!</button>
-        </form>         
-      </div>
-      <div class="col-lg-3"></div>
-    </div><!-- /row -->
-    <br/>
-
-  </div><!-- /container -->
-  
-
-  
+   <!-- Add your site or application content here -->
+    <div class="container view" ng-view></div>
+   
   
 
     <!-- BOWER COMPONENT SCRIPTS -->
@@ -72,6 +49,8 @@
     <script src="components/firebase-simple-login/firebase-simple-login.js"></script>
     <script src="components/angularfire/angularfire.min.js"></script>
     <!-- APP SCRIPTS -->
-    <script src="scripts/app.js"></script>
+    <script src="app.js"></script>
+    <script src="common/common.js"></script>
+    
   </body>
 </html>

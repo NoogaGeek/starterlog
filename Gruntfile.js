@@ -24,11 +24,11 @@ module.exports = function (grunt) {
   		project: {
   			app: 'app',
   			images: 'app/images',
-  			index: 'app/index.html',
+  			index: 'app/common/',
   			scripts: 'app/scripts',
   			styles: 'app/styles',
   			templates: 'app/templates',
-  			components: 'bower_components',
+  			components: 'app/components',
   			dist: 'dist',
   			grunt: 'Gruntfile.js'
   		},
