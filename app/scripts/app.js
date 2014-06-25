@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('starterlog', ['ngRoute', 'user']);
+angular.module('starterlog', ['ngRoute']);
